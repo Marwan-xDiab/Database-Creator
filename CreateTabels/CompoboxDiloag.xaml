@@ -1,0 +1,28 @@
+﻿<Window x:Class="CreateTabels.CompoboxDiloag"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CreateTabels"
+        mc:Ignorable="d"
+        Title="Select Type" Height="250" Width="550">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="187*"/>
+            <RowDefinition Height="103*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0"  Height="50" Width="532 ">
+            <TextBlock x:Name="col" VerticalAlignment="Center" Margin="10" FontSize="22" Background="White" Foreground="#FF9C0A0A" FontFamily="Segoe UI Semibold">Select Type</TextBlock>
+            <ComboBox Width="260" FontSize="18" VerticalAlignment="Center" x:Name="com" SelectionChanged="com_SelectionChanged"  >
+                <ComboBoxItem IsSelected="True">Textbox</ComboBoxItem>
+                <ComboBoxItem>ComboBox</ComboBoxItem>
+            </ComboBox>
+            <Button Width="120" VerticalAlignment="Center" x:Name="clicks" Content="Set" Height="30" Margin="10" FontSize="20" Background="#FF9C0A0A" BorderBrush="White" Foreground="White" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Center" Click="clicks_Click" FontFamily="Segoe UI Semibold"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center" >
+            <ComboBox Width="240" FontSize="18" VerticalAlignment="Center" x:Name="Tablss" Margin="10" SelectionChanged="Tablss_SelectionChanged"   />
+            <ComboBox Width="240" FontSize="18" VerticalAlignment="Center" x:Name="Culs" Margin="10" SelectionChanged="Culs_SelectionChanged"  />
+
+        </StackPanel>
+    </Grid>
+</Window>
